@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{87CDDA7F-AB55-3691-F930-6776F947066C}") = "RoadRunnerVR", "Assembly-CSharp.csproj", "{9B8C20A1-1516-6C3D-9B0E-8446CF3CB8C2}"
+EndProject
+Project("{87CDDA7F-AB55-3691-F930-6776F947066C}") = "RoadRunnerVR", "Assembly-CSharp-Editor.csproj", "{F3A2EDD2-F545-1AFA-CFFA-BF2653FD7740}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B8C20A1-1516-6C3D-9B0E-8446CF3CB8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8C20A1-1516-6C3D-9B0E-8446CF3CB8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8C20A1-1516-6C3D-9B0E-8446CF3CB8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8C20A1-1516-6C3D-9B0E-8446CF3CB8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A2EDD2-F545-1AFA-CFFA-BF2653FD7740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A2EDD2-F545-1AFA-CFFA-BF2653FD7740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A2EDD2-F545-1AFA-CFFA-BF2653FD7740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A2EDD2-F545-1AFA-CFFA-BF2653FD7740}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
