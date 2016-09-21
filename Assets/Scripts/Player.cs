@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 	public float degrees = 60.0f; 
 	private float inRadians;
 	private bool touchingFloor;
+	private float lastJumpRequestTime = 0.0f; 
 
 	void Start () {
 
@@ -23,33 +24,44 @@ public class Player : MonoBehaviour {
 
 	void PullTrigger(){
 
-		if (touchingFloor) {
-			
-			Vector3 projectedVector = Vector3.ProjectOnPlane (cardhead.Gaze.direction, Vector3.up);
-			Vector3 jumpVector = Vector3.RotateTowards (projectedVector, Vector3.up, inRadians, 0);
-			rb.velocity = jumpVector * speed;
+		RequestJump ();
+
+	}
+
+
+	private void Jump(){
+
+
+		Vector3 projectedVector = Vector3.ProjectOnPlane (cardhead.Gaze.direction, Vector3.up);
+		Vector3 jumpVector = Vector3.RotateTowards (projectedVector, Vector3.up, inRadians, 0);
+		rb.velocity = jumpVector * speed;
+
+	}
+
+	private void RequestJump(){
+
+		lastJumpRequestTime = Time.time;
+		rb.WakeUp ();
+	}
+
+	void OnCollisionStay(Collision collision){
+
+		float delta = Time.time - lastJumpRequestTime;
+
+		if (delta < 0.1f) {
+
+			Jump ();
+			lastJumpRequestTime = 0.0f;
 
 		}
 
-
-	}
-
-	void OnCollisionEnter(Collision collision){
-
-		touchingFloor = true;
-
-	}
-
-	void OnCollisionExit(Collision collision){
-
-		touchingFloor = false;
-
+	
 	}
 		
 	// Update is called once per frame
 	void Update () {
 	
 	
-		print (touchingFloor);
+
 	}
 }
