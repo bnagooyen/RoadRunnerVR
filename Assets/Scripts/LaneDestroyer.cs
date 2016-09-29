@@ -12,4 +12,18 @@ public class LaneDestroyer : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void OnTriggerEnter(Collider collider){
+
+
+		if (collider.gameObject.tag == "Lane") {
+		
+			Destroy (collider.gameObject);
+
+		}
+
+
+
+	}
+
 }

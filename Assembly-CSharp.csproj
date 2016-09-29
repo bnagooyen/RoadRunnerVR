@@ -72,11 +72,11 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
-     <Compile Include="Assets\LaneDestroyer.cs" />
      <Compile Include="Assets\Scripts\CarMovement.cs" />
      <Compile Include="Assets\Scripts\CarSpawner.cs" />
      <Compile Include="Assets\Scripts\FlameFollower.cs" />
      <Compile Include="Assets\Scripts\GameOverMessage.cs" />
+     <Compile Include="Assets\Scripts\LaneDestroyer.cs" />
      <Compile Include="Assets\Scripts\LaneSpawner.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\SceneChanger.cs" />
